@@ -5,7 +5,7 @@ from pydantic.typing import NoneType
 
 
 class CommandResult(BaseModel):
-    command: List[str]
+    command: List[Union[str, List[str]]]
     description: Union[NoneType, str]
 
 
