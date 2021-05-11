@@ -2,7 +2,9 @@ from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram_autodoc import AutoDoc, DescriptionFilter
 
-bot = Bot('0', validate_token=False)
+BOT_TOKEN = '00000:something-words-in-token'
+
+bot = Bot(BOT_TOKEN, validate_token=False)
 dp = Dispatcher(bot)
 
 dp.filters_factory.bind(DescriptionFilter)
