@@ -8,20 +8,20 @@ dp = Dispatcher(bot)
 dp.filters_factory.bind(DescriptionFilter)
 
 
-@dp.message_handler(commands=['start'], description='Описание для функции с командой /start')
+@dp.message_handler(commands=['start'], description='Description for the function with the /start command')
 async def start(msg: Message):
     pass
 
 
 @dp.message_handler(commands=['help'])
 async def help(msg: Message):
-    """Описание для функции с командой /help, с использованием docstring"""
+    """Description for a function with the /help command, using docstring"""
     pass
 
 
 @dp.message_handler()
 async def just_function(msg: Message):
-    """Просто функция без команды"""
+    """Just a function without a command that doesn't output in result"""
     pass
 
 
